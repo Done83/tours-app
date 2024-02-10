@@ -37,8 +37,16 @@ function App() {
         return <LoadingComponent />;
     }
 
-    // TODO:
-    // add remove button
+    if (tours.length === 0) {
+      return (
+          <div className='text-center mt-32'>
+              <h2 className='mt-5'>No tours left</h2>
+              <button type='button' className='bg-teal-500 text-white px-4 py-2 rounded-lg' onClick={fetchTours}>
+                Refresh
+              </button>
+          </div>
+      );
+    }
 
     return (
         <>

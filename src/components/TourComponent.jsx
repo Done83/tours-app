@@ -5,7 +5,7 @@ const TourComponent = ({ name, info, image, price, removeTour, id }) => {
     const [readMore, setReadMore] = useState(false);
 
     return (
-        <article className='relative rounded shadow-md mb-4 w-[350px] h-[800px]'>
+        <article className='relative rounded shadow-md mb-4 w-[350px] h-[600px]'>
             <div className=''>
                 <img
                     src={image}
